@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" >
+
+    <title>LOGOWANIE - HAZLO</title>
+    <script src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+
+</head>
+<body>
+    <div class="contener">
+        <div class="wave_login1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+            <h1 class="headline">LOGOWANIE</h1>
+
+
+
+
+        <form id="login-form">
+            <label for="role">ROLA: </label>
+
+            <select id="role" name="role">
+                <option value="user1">ZLECENIODAWCA</option>
+                <option value="user2">WYKONAWCA</option>
+            </select>
+
+            <button class="buttonDesign" type="submit">ZALOGUJ</button>
+        </form>
+
+        <div class="logo_name">
+            <p>HAZLO</p>
+        </div>
+
+
+
+
+        <div class="wave_login2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

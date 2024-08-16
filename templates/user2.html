@@ -1,0 +1,53 @@
+<!-- user2.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAZLO - 2</title>
+ 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/user2.css') }}" >
+
+    <script src="{{ url_for('static', filename='js/user2.js') }}" defer></script>
+
+    
+
+</head>
+<body>
+    <div class="contener">
+        <div class="wave_login1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <h1 class="headline">WITAJ</h1>
+        <h1 class="headline glow">WYKONAWCO!</h1>
+    
+        <h2>TWOJE ZADANIA</h2>
+
+        <ul id="tasks-list"></ul>
+
+
+        <br>
+        <hr>
+        <button class="buttonDesign"><a href="/login.html" id="logout-link">WYLOGUJ SIĘ</a></button>
+
+        <div class="logo_name">
+            <p>HAZLO</p>
+        </div>
+
+      
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/user2.js') }}"></script>
+
+</body>
+</html>

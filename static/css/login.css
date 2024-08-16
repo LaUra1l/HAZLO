@@ -1,0 +1,89 @@
+body{
+    height: 100vh;
+}
+
+.contener{
+    
+    
+
+    #login-form{
+        background-color: var(--color4);
+        width: 60vh;
+        /* width: 250px; */
+        height: 200px;
+        color: var(--color3);
+        border: 2px dashed var(--color1);
+        padding: 20px;
+
+
+
+        label{
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 5px;
+            border-bottom: 1px solid var(--color3);
+            /* font-size:1.4rem; */
+        }
+        select{
+            margin-left: 10px;
+            background-color: var(--color3);
+            color: var(--color2);
+            /* font-size: 1rem; */
+            /* font-size: .7rem; */
+            font-weight: 600;
+            padding: 5px;
+            text-align: center;
+        }
+
+        button{
+            display: block;
+            background-color: var(--color3);
+            border: 2px double var(--color1);
+            color: var(--color1);
+            font-weight: 700;
+           
+            width: 80px;
+            height: 30px;
+            /* font-size: 0.7rem; */
+            margin: 10vh auto;
+            
+        }
+    }
+    
+
+    /* WAVES:  */
+
+    
+
+    .wave_login2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    
+    .wave_login2 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 100px;
+    }
+    
+    .wave_login2 .shape-fill {
+        fill: var(--color2);
+    }
+}
+
+@media (max-width:720px) {
+    #login-form{
+        width: 250px !important;
+
+        label{
+            font-size: 0.7rem;
+        }
+
+    }
+}

@@ -1,0 +1,72 @@
+body{
+    min-height: 100vh;
+}
+
+.contener{
+    
+    min-height: 200vh;
+    /* padding: 20px; */
+
+    h2{
+        color: var(--color1);
+    }
+
+    #tasks-list{
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        flex-wrap: wrap;
+        
+       
+        input{
+            color: var(--color3);
+        }
+        
+        label{
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 5px;
+            border-bottom: 1px solid var(--color1);
+        }
+        
+        #description{
+            resize:none;
+            height: 50px;
+        }
+        .listElem{
+            scale: 0.9;
+            background-color: var(--color4);
+            color: var(--color1);
+            padding: 5px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+
+
+            box-shadow:  7px 7px 0px var(--color1),
+            -7px -7px 0px var(--color2);
+
+            p{
+                background-color: var(--opacityColor);
+                padding: 5px;
+                color: var(--color3);
+                border: 2px dashed var(--color1);
+                border-radius: 4px;
+            }
+
+        }
+
+        .icon{
+            margin-left: 10px;
+            font-size: 1.4rem;
+
+            background-color:var(--color3);
+            padding: 4px;
+        }
+
+    }
+    
+}
+
+
+

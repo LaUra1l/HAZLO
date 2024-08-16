@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* :root{
+    --color1:rgb(22, 48, 32);
+    --color2:rgb(48, 77, 48);
+    --color3:rgb(182, 196, 182);
+    --color4:rgb(238, 240, 229);
+
+    --opacityColor:rgba(182, 196, 182, 0.505);
+}
+  */
+
+:root{
+    --color1:rgb(43, 46, 50);
+    --color4:rgb(49, 54, 63);
+    --color2:rgb(65, 96, 97);
+    --color3:rgb(238, 238, 238);
+
+    --opacityColor:rgba(238, 238, 238, 0.236);
+    --opacityColor2:rgba(135, 191, 191, 0.299);
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+    width: 100%;
+
+    overflow-x: hidden;
+
+    font-family: "Wittgenstein", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.contener{
+    background-color: var(--color3);
+    height: 100%;
+    border: 5px solid var(--color2);
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .headline{
+        letter-spacing: 6px;
+        color: var(--color4);
+        border-bottom: 2px solid var(--color3);
+        padding: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+
+        
+    }
+    .buttonDesign{
+        display: block;
+        background-color: var(--color3);
+        border: 2px double var(--color2);
+        color: var(--color2);
+        font-weight: 700;
+       
+        min-width: 80px;
+        height: 30px;
+        font-size: 0.7rem;
+        margin: 5vh auto;
+        
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo_name{
+        width: 100%;
+        border-top: 3px solid var(--color1);
+        margin: 20px 0;
+        p{
+            font-style: italic;
+            letter-spacing: 5px;
+            text-align: center;
+            padding: 10px;
+            background-color: var(--color4);
+            font-weight: 600;
+            color: var(--color3);
+        }
+    }
+
+}
+
+/* WŁAŚCIWOŚCI OGÓLNE: */
+
+img{
+    width: 200px;
+    height: 200px;
+
+    border: 2px solid var(--color3);
+    padding: 5px;
+}
+.glow{
+    margin: 10px 0;
+    text-shadow: 
+        0 0 5px rgb(65, 96, 97),
+        0 0 10px rgb(65, 96, 97),
+        0 0 20px rgb(65, 96, 97),
+        0 0 30px rgb(65, 96, 97),
+        0 0 40px rgb(65, 96, 97);
+
+    border-bottom: 2px solid var(--color1) !important;
+}
+
+.wave_login1 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave_login1 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 66px;
+}
+
+.wave_login1 .shape-fill {
+    fill: var(--color2);
+}
+
+
+
